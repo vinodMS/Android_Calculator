@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appvertical1" >
+
+    <fragment
+        android:name="nl.inholland.calculator.Box1"
+        android:id="@+id/box1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    
+    <fragment
+        android:name="nl.inholland.calculator.Box2"
+        android:id="@+id/box2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/box1"/>
+    
+    <fragment
+        android:name="nl.inholland.calculator.Box3"
+        android:id="@+id/box3"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/box2"
+        android:layout_below="@id/box1"/>
+
+</RelativeLayout>
+ 

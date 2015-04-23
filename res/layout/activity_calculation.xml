@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/appvertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtStack"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/inputview1"
+        android:gravity="right"
+        android:textColor="@color/darkgreen"
+        android:textSize="25sp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="283dp"
+        android:columnWidth="90dp"
+        android:horizontalSpacing="10dp"
+        android:rowCount="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/gridFunctions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="10dp" >
+
+        <Button
+            android:id="@+id/button_calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:onClick="getResult"
+            android:text="@string/button_calculate" />
+
+        <Button
+            android:id="@+id/button_backup_data"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/button_calculate"
+            android:onClick="backupData"
+            android:text="@string/button_backup_data" />
+
+        <Button
+            android:id="@+id/button_show_data"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button_backup_data"
+            android:onClick="retrieveData"
+            android:text="@string/button_show_data" />
+        
+        <Button
+            android:id="@+id/button_return"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button_show_data"
+            android:onClick="retrieveData"
+            android:text="@string/button_retrun" />
+
+    </RelativeLayout>
+
+</LinearLayout>
